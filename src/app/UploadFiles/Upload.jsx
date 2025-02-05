@@ -5,7 +5,7 @@ import axios from "axios";
 import { FiUploadCloud, FiTrash2, FiCheckCircle, FiRefreshCcw, FiFile } from "react-icons/fi";
 
 const CLOUDINARY_UPLOAD_PRESET = "your_upload_preset"; // Change this
-const CLOUDINARY_CLOUD_NAME = "your_cloud_name"; // Change this
+const CLOUDINARY_CLOUD_NAME = "dzl6mrlsa"; // Change this
 
 const UploadFile = () => {
   const [files, setFiles] = useState([]);
@@ -93,7 +93,7 @@ const UploadFile = () => {
           <FiUploadCloud className="text-gray-500 text-4xl mb-2" />
           <span className="text-blue-500 font-semibold">Click here</span> to upload your file
         </label>
-        <p className="text-sm text-gray-500 mt-2">Supported Formats: PNG, JPG, SVG</p>
+        <p className="text-sm text-gray-500 mt-2">Supported Formats: PNG, JPG, SVG , PDF</p>
       </div>
 
       {/* Uploaded Files List */}

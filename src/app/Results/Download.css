@@ -4,49 +4,27 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-  }  
-
-  .collaborator-btn { 
-    display: flex; 
-    margin-left: 200px;
-    gap: 3px;
-  } 
-  .collaborato-btn { 
-    display: flex; 
-    background: #38f40e;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    width: 10%;
-    gap: 3px;
-  } 
-
-  .light{ 
-    color: black;
-  }
-
-  .box { 
-    margin-top: 150px;
   }
   
   .dashboard-container {
     display: flex;
     height: 100vh;
-    background: linear-gradient(to right, #b3aee7, #79c7f3);
-    
+   
   }
-  
+
+ 
   /* Sidebar */
   .sidebar {
     width: 300px; /* Increased width */
-    background: white;
-    padding: 20px; 
-    
+    background: rgb(251, 251, 251);
+    padding: 20px;
     display: flex;
+    border-left: 20px;
+
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 10px rgba(240, 239, 239, 0.1);
   }
   
   .logo img {
@@ -57,28 +35,10 @@
   nav ul, .sidebar-footer ul {
     list-style: none;
     padding: 0;
-  } 
+  }
 
-  .pdf-input { 
-   background: white;
-    border-radius: 10px ; 
-    width: 50%;
- padding: 6px;
-  } 
-
-  .pdf-input-container { 
-    display: flex; 
-    flex-direction: row;
-  padding: 6px;
-    gap:8px ; 
-
-  } 
-
-  .pdf-submit-btn { 
-    background: white;
-    border-radius: 8px;
-    width: 10%;
-    padding: 6px;
+  .light { 
+    color: rgb(12, 12, 12);
   }
   
   nav ul li, .sidebar-footer ul li {
@@ -87,6 +47,7 @@
     padding: 12px;
     cursor: pointer;
     font-size: 16px;
+    gap:2px; 
     border-radius: 8px;
     transition: background 0.3s;
   }
@@ -97,7 +58,8 @@
   
   nav ul li:hover, .sidebar-footer ul li:hover,
   .active {
-    background: #e3e3e3;
+    background: #cec5c5;
+    gap:2px ; 
   }
   
   /* Main Content */
@@ -113,7 +75,6 @@
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
-    font-weight: 900;
   }
   
   .header-icons {
@@ -121,7 +82,8 @@
     gap: 30px;
     font-size: 20px;
   }
-  
+
+
   /* Stats Cards */
   .stats {
     display: flex;
@@ -205,6 +167,8 @@
     position: absolute;
     top: 35px;
     right: 0;
+    display: flex; 
+    flex-direction: row;
     background: white;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -216,11 +180,16 @@
     list-style: none;
     padding: 10px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
   }
   
   .dropdown-menu li {
     padding: 10px;
     cursor: pointer;
+    display: flex; 
+    flex-direction: row;
+    gap:8px
   }
   
   .dropdown-menu li:hover {
@@ -250,15 +219,6 @@
   
   .stat-card p {
     font-size: 16px;
-  } 
-
-
-  .collaborator-btn { 
-    background: #38f40e;
-    border-radius:10px; 
-    padding:10px ; 
-    display: flex;
-     flex-direction:row;
   }
   
   /* Charts Section */
@@ -277,5 +237,12 @@
     text-align: center;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     margin-left: 50px;
+  }
+
+  @media (width<1450px) {
+    .hii { 
+      display: flex ; 
+      flex-direction: row; 
+    } 
   }
   

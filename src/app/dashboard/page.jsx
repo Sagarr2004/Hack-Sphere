@@ -65,6 +65,7 @@ const Dashboard = () => {
   ];
 
   return (
+    <div className="bg-[radial-gradient(ellipse_10%_70%_at_bottom_left,#183ec2,#eaeefe_70%)] ">
     <div className="dashboard-container">
       {/* Sidebar */}
       <aside className="sidebar">
@@ -88,9 +89,7 @@ const Dashboard = () => {
             <li className="light">
             <MdSubscriptions /><Link href="subscription"> Subscription</Link>
             </li>
-            <li className="light">
-            <MdFileDownload /><Link href="Download"> Download Files</Link>
-            </li>
+           
             <li className="light">
             <MdFeedback /><Link href="Feedback"> Feedback</Link>
             </li>
@@ -252,6 +251,7 @@ const Dashboard = () => {
         </section>
       </main>
 
+    </div>
     </div>
   );
 };
