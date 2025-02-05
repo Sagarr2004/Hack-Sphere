@@ -1,0 +1,69 @@
+.signup_content {
+    display: flex;
+}
+
+.signup_title {
+    width: 65%;
+    height: 100vh;
+    background-color: #474656;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.signup_title img {
+    width: 500px;
+}
+.signup_form {
+    width: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup_form h2 {
+    margin-bottom: 20px;
+    line-height: 35px;
+
+    font-size: 30px;
+}
+
+.signup_btn {
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+.signup_btn button{
+    color: #fff;
+    background: transparent;
+    outline: none;
+}
+
+.signup_admin {
+    margin-top: 10px;
+    font-size: 14px;
+    color: grey;
+}
+
+.signup_admin p a {
+    color: #111;
+    font-weight: bold;
+}
+
+.signup_role_select {
+    margin-bottom: 20px;
+  }
+  
+  .role_dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+  }
+  

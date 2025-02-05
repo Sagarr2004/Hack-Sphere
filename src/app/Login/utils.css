@@ -1,0 +1,394 @@
+.custom_inputs {
+    width: 240px;
+    background-color: #E3E2E7;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+
+    display: flex;
+    gap: 10px;
+}
+
+.custom_inputs input {
+    background: none;
+    outline: none;
+    border: transparent;
+}
+
+
+/* dropdown documents */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    color: #4a4a4a;
+}
+
+.dropdown_arrow {
+    margin-left: 10px;
+    font-size: 10px;
+}
+
+.dropdown_menu {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    border-radius: 5px;
+    z-index: 1;
+    border: 1px solid #e0e0e0;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0;
+}
+
+.dropdown_menu li {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #4a4a4a;
+    transition: background 0.3s;
+}
+
+.dropdown_menu li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+/* Form Card */
+.form_card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.form_card_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_card_status {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form_card_divider {
+    border: none;
+    border-top: 1px solid #000;
+    margin: 10px 0;
+}
+
+.form_card_description {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.form_card_download {
+    color: #d9534f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form_card_download:hover {
+    text-decoration: underline;
+}
+
+
+
+/* admin comments */
+.admin_comments {
+    margin-top: 100px;
+    padding: 20px;
+}
+/* Main container */
+.admin_comments {
+    padding: 20px;
+    /* font-family: Arial, sans-serif; */
+    /* background-color: #f7f7f7;  */
+  }
+  
+  .admin_comments h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Individual comment block */
+  .comment {
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 20px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px;
+    background: #ffffff;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Checkbox */
+  .checkbox {
+    margin-top: 8px;
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  /* Comment details */
+  .comment_details {
+    flex-grow: 1;
+  }
+  
+  .comment_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Wraps on smaller screens */
+  }
+  
+  .comment_title {
+    font-weight: bold;
+    color: #444;
+    font-size: 1rem;
+    margin-right: 10px;
+  }
+  
+  .comment_id {
+    font-size: 0.9rem;
+    color: #007bff;
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .status_container {
+    display: flex;
+    gap: 5px; /* Space between status badges */
+  }
+  
+  .status,
+  .completion {
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+  }
+  
+  /* Status colors */
+  .status.cancelled {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
+  .completion.completed {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  /* Footer section */
+  .comment_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-wrap: wrap; /* Wrap footer elements for smaller screens */
+  }
+  
+  .date_range {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .date_range .label {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #333;
+  }
+  
+  .date {
+    color: #666;
+  }
+  
+  /* Duration styling */
+  .duration {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .time_icon {
+    font-size: 1.2rem;
+    color: #28a745;
+    margin-right: 5px;
+  }
+  
+  .time {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Message icon */
+  .message_icon {
+    font-size: 1.2rem;
+    color: #555;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+
+
+
+
+/* Submission */
+/* Container Styling */
+.submit-revision {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.submit-revision h2 {
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.submit-revision form {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Section Styling */
+.form-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Textarea Styling */
+.response-textarea {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Upload Container Styling */
+.upload-container {
+  border: 2px dashed #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.upload-container label {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.upload-container p {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Button Styling */
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Submission History */
+/* Container Styling */
+.submission-history {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-color: #f9f9f9;
+}
+
+.submission-history h2 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+  padding: 10px 5px;
+}
+
+tbody td:last-child {
+  text-align: center;
+}
+
+/* Status Styling */
+.status-reviewed {
+  color: #32cd32; /* Green for 'Reviewed' */
+}
+
+.status-pending {
+  color: #f4a261; /* Orange for 'Pending' */
+}
+
+.status-in-review {
+  color: #6a0dad; /* Purple for 'In - Review' */
+}
+
+/* Checkbox Styling */
+input[type="checkbox"] {
+  cursor: pointer;
+}
+

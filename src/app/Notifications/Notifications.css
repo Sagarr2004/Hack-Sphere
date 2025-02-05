@@ -1,0 +1,137 @@
+/* App Container */
+.app-container {
+  height: 100vh;
+  background-color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notifications-btn {
+  background-color: #829cf2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s;
+}
+
+.notifications-btn.disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(150, 178, 236, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.header-left {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.unread-count {
+  background-color: #5c8bef;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+}
+
+.header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.dropdown {
+  border: 1px solid #e2e8f0;
+  padding: 0.25rem;
+  border-radius: 0.375rem;
+}
+
+/* Notification List */
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: calc(80vh - 90px);
+  overflow-y: auto;
+}
+
+.notification-item {
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.notification-item.unread {
+  background-color: #f3f4f6;
+}
+
+.notification-item.read {
+  background-color: #ffffff;
+  opacity: 0.5;
+}
+
+.notification-icon {
+  font-size: 2rem;
+  color: #0d1014;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notification-text {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+.project-id {
+  font-weight: 700;
+  color: #080b11;
+  cursor: pointer;
+}
+
+.notification-time {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}

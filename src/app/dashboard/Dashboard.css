@@ -1,0 +1,235 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(to right, #b3aee7, #79c7f3);
+  }
+
+ 
+  /* Sidebar */
+  .sidebar {
+    width: 300px; /* Increased width */
+    background: rgb(250, 249, 249);
+    padding: 20px;
+    display: flex;
+    border-left: 20px;
+
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  nav ul, .sidebar-footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li, .sidebar-footer ul li {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    gap:2px; 
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  nav ul li svg, .sidebar-footer ul li svg {
+    margin-right: 10px;
+  }
+  
+  nav ul li:hover, .sidebar-footer ul li:hover,
+  .active {
+    background: #aaa6a6;
+    gap:2px ; 
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+  }
+  
+  .header-icons {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+  }
+  
+  /* Stats Cards */
+  .stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 150px;
+  } 
+  
+  .hii { 
+    display: flex ; 
+    flex-direction: column; 
+    gap:10px;
+  } 
+  /* Progress Bars Section */
+.progress-bars {
+    /* background: white; */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 650px;
+    margin-top: -225px;
+    width:50% ; 
+    align-content: flex-end;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-bars h3 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .progress {
+    margin-bottom: 15px;
+  }
+  
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar {
+    height: 12px;
+    border-radius: 8px;
+    background: #e3e3e3;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .progress-fill.file-processing { background: #ff595e; }
+  .progress-fill.accuracy { background: #84e156; }
+  .progress-fill.confidence { background: #baea35; }
+  
+
+  .char { 
+    display: flex ; 
+    flex-direction:row ; 
+    margin-top: 20px;
+    gap:300px ; 
+
+  } 
+
+  /* Dropdown Menu */
+.user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 0 15px;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: flex; 
+    flex-direction: row;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex; 
+    flex-direction: row;
+    gap:8px
+  }
+  
+  .dropdown-menu li:hover {
+    background: #f0f0f0;
+  }
+  
+  
+  .stat-card {
+   
+    background: #5eead4;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width:300px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stat-card svg {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .stat-card h3 {
+    font-size: 22px;
+    margin: 10px 0 5px;
+  }
+  
+  .stat-card p {
+    font-size: 16px;
+  }
+  
+  /* Charts Section */
+  .charts {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Align graphs properly */
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  /* Graph Styles */
+  .bar-chart, .pie-chart {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+  }
+  
